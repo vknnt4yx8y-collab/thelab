@@ -1,0 +1,39 @@
+name: TheLab
+version: 1.0.0
+main: com.thelab.plugin.TheLabPlugin
+api-version: '1.21'
+description: TheLab MiniGame - A multi-arena party minigame
+authors:
+  - TheLab Team
+softdepend:
+  - PlaceholderAPI
+  - ProtocolLib
+
+commands:
+  thelab:
+    description: Main TheLab MiniGame command
+    aliases:
+      - tl
+      - lab
+    usage: /<command> <subcommand> [args]
+    permission: thelab.use
+
+permissions:
+  thelab.use:
+    description: Allows basic use of TheLab commands
+    default: true
+  thelab.join:
+    description: Allows joining and quickjoining arenas
+    default: true
+  thelab.spectate:
+    description: Allows spectating arenas
+    default: true
+  thelab.stats:
+    description: Allows viewing player stats
+    default: true
+  thelab.leaderboard:
+    description: Allows viewing the leaderboard
+    default: true
+  thelab.admin:
+    description: Grants access to all TheLab administrative commands
+    default: op

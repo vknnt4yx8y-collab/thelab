@@ -1,0 +1,93 @@
+dodge-ball:
+  enabled: true
+  duration: 120
+  min-players: 2
+  spawn-count: 16
+
+electric-floor:
+  enabled: true
+  duration: 180
+  min-players: 2
+  color-change-interval: 3
+  grace-period: 1.5
+
+gold-rush:
+  enabled: true
+  duration: 90
+  min-players: 2
+  gold-ingot-points: 1
+  gold-block-points: 5
+  spawn-interval-min: 2
+  spawn-interval-max: 5
+
+crazy-paints:
+  enabled: true
+  duration: 90
+  min-players: 2
+  splash-refill-interval: 15
+
+balloon-pop:
+  enabled: true
+  duration: 60
+  min-players: 2
+  balloon-white-points: 1
+  balloon-yellow-points: 2
+  balloon-red-points: 3
+  balloon-gold-points: 5
+
+snowman:
+  enabled: true
+  duration: 120
+  min-players: 2
+  freeze-duration: 5
+  unfreeze-radius: 2
+  unfreeze-time: 3
+
+splegg:
+  enabled: true
+  duration: 180
+  min-players: 2
+  layers: 3
+
+fight:
+  enabled: true
+  duration: 120
+  min-players: 2
+  respawn-delay: 3
+  powerup-interval: 20
+
+whack-a-mob:
+  enabled: true
+  duration: 60
+  min-players: 2
+  mob-stay-min: 3
+  mob-stay-max: 5
+
+boat-wars:
+  enabled: true
+  duration: 150
+  min-players: 2
+  boat-health: 5
+
+pig-racing:
+  enabled: true
+  duration: 180
+  min-players: 2
+  laps: 3
+  boost-cooldown: 3
+
+rocket-race:
+  enabled: true
+  duration: 120
+  min-players: 2
+
+breaking-blocks:
+  enabled: true
+  duration: 90
+  min-players: 2
+  regenerate-interval: 10
+
+catastrophic:
+  enabled: true
+  duration: 180
+  min-players: 2
