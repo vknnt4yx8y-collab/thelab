@@ -4,6 +4,7 @@ import net.kyori.adventure.text.Component;
 import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
 import net.kyori.adventure.title.Title;
 import org.bukkit.ChatColor;
+import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 import java.time.Duration;
@@ -34,6 +35,11 @@ public final class MessageUtil {
     /** Sends a colorized message to a player (no prefix). */
     public static void sendRaw(Player player, String message) {
         player.sendMessage(toComponent(message));
+    }
+
+    /** Sends a colorized message to any command sender (no prefix). */
+    public static void sendRaw(CommandSender sender, String message) {
+        sender.sendMessage(toComponent(message));
     }
 
     /** Sends a title to a player. */

@@ -78,6 +78,7 @@ public class ScoreboardManager {
         Map<Integer, Team> teams = playerTeams.computeIfAbsent(player.getUniqueId(), uuid -> new HashMap<>());
 
         // First, ensure enough teams exist
+        final Objective finalObj = obj;
         for (int i = 0; i < lines.size(); i++) {
             int score = lines.size() - i;
             Team team = teams.computeIfAbsent(score, s -> {
@@ -87,7 +88,7 @@ public class ScoreboardManager {
                 // Add entry
                 String entry = getEntry(s);
                 if (!t.hasEntry(entry)) t.addEntry(entry);
-                obj.getScore(entry).setScore(s);
+                finalObj.getScore(entry).setScore(s);
                 return t;
             });
             team.prefix(LegacyComponentSerializer.legacyAmpersand().deserialize(lines.get(i)));
