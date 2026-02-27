@@ -3,6 +3,7 @@ package com.thelab.plugin.player;
 import org.bukkit.GameMode;
 import org.bukkit.Location;
 import org.bukkit.attribute.Attribute;
+import org.bukkit.attribute.AttributeInstance;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.potion.PotionEffect;
@@ -37,8 +38,9 @@ public class PlayerInventorySnapshot {
         this.heldItemSlot = player.getInventory().getHeldItemSlot();
         this.gameMode = player.getGameMode();
         double maxHealth = 20.0;
-        if (player.getAttribute(Attribute.MAX_HEALTH) != null) {
-            maxHealth = player.getAttribute(Attribute.MAX_HEALTH).getValue();
+        AttributeInstance maxHealthAttr = player.getAttribute(Attribute.GENERIC_MAX_HEALTH);
+        if (maxHealthAttr != null) {
+            maxHealth = maxHealthAttr.getValue();
         }
         this.health = Math.min(player.getHealth(), maxHealth);
         this.foodLevel = player.getFoodLevel();
@@ -72,8 +74,9 @@ public class PlayerInventorySnapshot {
         player.getInventory().setHeldItemSlot(heldItemSlot);
         player.setGameMode(gameMode);
         double maxHealth = 20.0;
-        if (player.getAttribute(Attribute.MAX_HEALTH) != null) {
-            maxHealth = player.getAttribute(Attribute.MAX_HEALTH).getValue();
+        AttributeInstance maxHealthAttr = player.getAttribute(Attribute.GENERIC_MAX_HEALTH);
+        if (maxHealthAttr != null) {
+            maxHealth = maxHealthAttr.getValue();
         }
         player.setHealth(Math.min(health, maxHealth));
         player.setFoodLevel(foodLevel);
