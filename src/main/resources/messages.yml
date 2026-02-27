@@ -1,0 +1,153 @@
+prefix: "&8[&aTheLab&8] &r"
+
+errors:
+  no-permission: "&cYou don't have permission to do that."
+  player-only: "&cThis command can only be run by a player."
+  arena-not-found: "&cArena '{arena}' not found."
+  already-in-arena: "&cYou are already in an arena."
+  arena-full: "&cThat arena is full."
+  arena-disabled: "&cThat arena is currently disabled."
+  not-in-arena: "&cYou are not in an arena."
+  arena-not-setup: "&cThat arena is not fully set up yet."
+  invalid-args: "&cInvalid arguments. Usage: {usage}"
+  arena-already-exists: "&cAn arena with that ID already exists."
+  no-arenas: "&cThere are no arenas available."
+  player-not-found: "&cPlayer '{player}' not found."
+  not-enough-players: "&cNot enough players to start."
+
+arena:
+  join: "&aYou joined arena &e{arena}&a!"
+  leave: "&aYou left the arena."
+  player-joined: "&e{player} &ajoined the game! &7({current}/{max})"
+  player-left: "&e{player} &cleft the game. &7({current}/{max})"
+  waiting: "&eWaiting for more players... &7({current}/{min})"
+  starting: "&aGame starting in &e{seconds}&a seconds!"
+  cancelled: "&cCountdown cancelled - not enough players."
+  list-header: "&e&lArena List:"
+  list-entry: "&7- &e{id} &7| &f{state} &7| &a{current}&7/&a{max} players"
+  created: "&aArena &e{arena}&a created successfully!"
+  deleted: "&aArena &e{arena}&a deleted."
+  enabled: "&aArena &e{arena}&a enabled."
+  disabled: "&aArena &e{arena}&a disabled."
+  lobby-set: "&aLobby spawn set for arena &e{arena}&a."
+  spectator-set: "&aSpectator spawn set for arena &e{arena}&a."
+  main-lobby-set: "&aMain lobby location set."
+  force-started: "&aForce started arena &e{arena}&a."
+  reloaded: "&aPlugin reloaded successfully."
+  experiment-added: "&aExperiment &e{experiment}&a added to arena &e{arena}&a."
+  experiment-removed: "&aExperiment &e{experiment}&a removed from arena &e{arena}&a."
+
+game:
+  experiment-intro-title: "&e{experiment}"
+  experiment-intro-subtitle: "&f{description}"
+  experiment-start: "&aExperiment started! Good luck!"
+  experiment-end: "&eExperiment ended!"
+  results-title: "&e&lRESULTS"
+  results-header: "&e&lExperiment Results:"
+  results-entry: "&7{rank}. &f{player} &7- &e{score} pts"
+  points-awarded: "&aYou earned &e{points}&a points!"
+  eliminated: "&cYou have been eliminated!"
+  game-end-title: "&6&lGAME OVER"
+  winner-title: "&6{winner} &ewins!"
+  winner-chat: "&6&l{winner} &ewon the game with &6{score}&e total points!"
+  final-standings: "&e&lFinal Standings:"
+  your-place: "&fYour final place: &e#{rank}"
+  countdown-title: "&e{seconds}"
+  countdown-subtitle: "&fGame starting!"
+  teleporting: "&eTeleporting in {seconds} seconds..."
+
+spectator:
+  joined: "&7You are now spectating."
+  left: "&7You are no longer spectating."
+
+stats:
+  header: "&e&l--- Stats for {player} ---"
+  games-played: "&fGames Played: &e{value}"
+  wins: "&fWins: &e{value}"
+  losses: "&fLosses: &e{value}"
+  kills: "&fKills: &e{value}"
+  deaths: "&fDeaths: &e{value}"
+  points: "&fTotal Points: &e{value}"
+  kdr: "&fK/D Ratio: &e{value}"
+  winrate: "&fWin Rate: &e{value}%"
+  experiments-won: "&fExperiments Won: &e{value}"
+
+leaderboard:
+  header: "&e&l--- Leaderboard ({category}) ---"
+  entry: "&7{rank}. &f{player} &7- &e{value}"
+
+narrator:
+  prefix: "&8[&aDr. Zuk&8] &f"
+  lobby-wait:
+    - "Welcome, welcome! Step right into my laboratory! I have WONDROUS experiments planned!"
+    - "Ah, more test subjects! Excellent! Don't worry, only SOME experiments are dangerous... probably."
+    - "While we wait for more brave souls, let me sharpen my instruments. Heh heh heh."
+  countdown:
+    - "Ohoho! We have enough subjects! Prepare yourselves, the experiments begin shortly!"
+    - "Excellent! Initiating countdown sequence! My latest experiments await!"
+    - "Get ready, get ready! Science waits for no one!"
+  experiment-end:
+    - "Fascinating results! The data is most illuminating!"
+    - "Wonderful! Simply wonderful! On to the next experiment!"
+    - "Most impressive! Though I expected more... chaos."
+  game-end:
+    - "And that concludes today's experiments! The results are... acceptable."
+    - "Magnificent! Science has spoken, and so has your performance!"
+    - "Another successful batch of experiments! My research continues..."
+  experiment-intro:
+    dodge-ball:
+      - "Experiment 1: Dodge Ball! Dodge the snowballs or face elimination! It's basic physics!"
+      - "Who has the fastest reflexes? Dodge or be dodged - science demands it!"
+      - "Snowballs at high velocity! Watch those trajectories, subjects!"
+    electric-floor:
+      - "Experiment 2: Electric Floor! Stand on the announced color or fall to your doom!"
+      - "Colors! Patterns! Electrification! My favorite experiment!"
+      - "The floor is electrified - well, conceptually. Stay on the right color!"
+    gold-rush:
+      - "Experiment 3: Gold Rush! Collect as much gold as possible! Greed is... encouraged!"
+      - "Gold ingots and gold blocks scattered everywhere! Collect, collect, collect!"
+      - "The one with the most gold wins! Even science appreciates wealth!"
+    crazy-paints:
+      - "Experiment 4: Crazy Paints! Paint the floor your color and claim territory!"
+      - "Colors everywhere! Paint the world in your hue! The most colorful wins!"
+      - "Use your shovel and splash potions wisely! Every block counts!"
+    balloon-pop:
+      - "Experiment 5: Balloon Pop! Shoot the balloons for points! Aim carefully!"
+      - "Balloons of different colors worth different points! Gold ones are VERY rare!"
+      - "Pop! Pop! Pop! The skies are full of targets - don't miss!"
+    snowman:
+      - "Experiment 6: Snowman! Freeze your opponents with snowballs!"
+      - "Frozen subjects can be thawed by teammates! Freezing scores points!"
+      - "You ARE the snowman! Freeze everything in sight!"
+    splegg:
+      - "Experiment 7: Splegg! Destroy the floor beneath your opponents!"
+      - "Eggs destroy blocks! Shoot wisely and survive the longest!"
+      - "Multiple layers of floor! Break them away and send opponents falling!"
+    fight:
+      - "Experiment 8: Fight! Standard deathmatch - kill for points!"
+      - "Kill or be killed! Power-ups spawn periodically - grab them!"
+      - "The combat experiment! Most kills wins! En garde!"
+    whack-a-mob:
+      - "Experiment 9: Whack-A-Mob! Hit the right mobs for points!"
+      - "Different mobs score differently! Avoid the penalty mobs!"
+      - "Quick reflexes needed! Mobs appear and disappear fast!"
+    boat-wars:
+      - "Experiment 10: Boat Wars! Destroy enemy boats with your bow!"
+      - "Five hits destroys a boat! Ram them or shoot them!"
+      - "The water arena awaits! Last boat floating wins!"
+    pig-racing:
+      - "Experiment 11: Pig Racing! Race your pig around the track!"
+      - "Three laps to victory! Use your carrot on a stick wisely!"
+      - "Speed boost available! First across the finish line wins!"
+    rocket-race:
+      - "Experiment 12: Rocket Race! Fly through all the checkpoints!"
+      - "Elytra and rockets provided! Follow the checkpoints in order!"
+      - "Fly fast, fly true! First to complete all checkpoints wins!"
+    breaking-blocks:
+      - "Experiment 13: Breaking Blocks! Mine blocks for points!"
+      - "Different blocks score differently! Emerald ore scores most!"
+      - "Blocks regenerate! Keep mining for maximum points!"
+    catastrophic:
+      - "Experiment 14: Catastrophic! Survive the escalating disasters!"
+      - "TNT! Lightning! Lava! Disappearing floors! Good luck... you'll need it!"
+      - "The ultimate survival challenge! Last one standing wins!"

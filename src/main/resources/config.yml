@@ -1,0 +1,72 @@
+prefix: "&8[&aTheLab&8] &r"
+
+main-lobby:
+  world: "world"
+  x: 0.0
+  y: 64.0
+  z: 0.0
+  yaw: 0.0
+  pitch: 0.0
+
+game:
+  experiments-per-game: 3
+  min-players: 2
+  max-players: 16
+  lobby-countdown-seconds: 30
+  experiment-intro-seconds: 5
+  experiment-results-seconds: 5
+  game-end-display-seconds: 10
+
+  scoring:
+    first-place: 3
+    second-place: 2
+    third-place: 1
+    participation: 0
+
+  allow-spectators: true
+  arena-chat-only: true
+
+lobby-items:
+  map-selector:
+    slot: 0
+    material: COMPASS
+    name: "&aMap Selector"
+  leave:
+    slot: 4
+    material: NETHER_STAR
+    name: "&cLeave"
+  stats:
+    slot: 8
+    material: CLOCK
+    name: "&eStats"
+
+database:
+  type: SQLITE
+  sqlite:
+    file: "stats.db"
+  mysql:
+    host: "localhost"
+    port: 3306
+    database: "thelab"
+    username: "root"
+    password: "password"
+    table-prefix: "tl_"
+    pool-size: 10
+    use-ssl: false
+
+scoreboard:
+  enabled: true
+  update-interval: 10
+
+bungee:
+  enabled: false
+  mode: STANDALONE
+  remote:
+    lobby-server: "lobby"
+    game-servers:
+      - "thelab-1"
+      - "thelab-2"
+  autoscale:
+    min-servers: 1
+    max-servers: 5
+    players-per-server: 16

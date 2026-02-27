@@ -1,0 +1,36 @@
+countdown-tick:
+  sound: "BLOCK_NOTE_BLOCK_HAT"
+  volume: 1.0
+  pitch: 1.0
+countdown-final:
+  sound: "BLOCK_NOTE_BLOCK_PLING"
+  volume: 1.0
+  pitch: 2.0
+experiment-start:
+  sound: "ENTITY_ENDER_DRAGON_GROWL"
+  volume: 1.0
+  pitch: 1.0
+experiment-end:
+  sound: "ENTITY_PLAYER_LEVELUP"
+  volume: 1.0
+  pitch: 1.0
+game-win:
+  sound: "UI_TOAST_CHALLENGE_COMPLETE"
+  volume: 1.0
+  pitch: 1.0
+elimination:
+  sound: "ENTITY_BLAZE_DEATH"
+  volume: 1.0
+  pitch: 1.0
+join-arena:
+  sound: "ENTITY_PLAYER_LEVELUP"
+  volume: 0.5
+  pitch: 1.0
+leave-arena:
+  sound: "ENTITY_ENDERMAN_TELEPORT"
+  volume: 0.5
+  pitch: 1.0
+score-point:
+  sound: "ENTITY_EXPERIENCE_ORB_PICKUP"
+  volume: 0.5
+  pitch: 1.0
